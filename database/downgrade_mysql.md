@@ -1,5 +1,6 @@
 # Downgrade mysql from 8.0 to 5.7 MACOS-mojave
-### 1. Uninstall all version mysql:
+## Please notice `step 3/`
+### step 1/ Uninstall all version mysql:
 ```sh
 brew uninstall mysql # remove default installed mysql may be 8.0
 brew uninstall mysql@5.7 # remove old mysql@5.7
@@ -8,15 +9,20 @@ rm /usr/local/etc/my.cnf
 
 brew unlink mysql
 ```
-### 2. Install MySQL 5.7
+### step 2/ Install MySQL 5.7
 ```sh
 brew install mysql@5.7
 ```
-### 3. Link to homebrew to new `mysql`
+### step 3/ Remember to export variable to .zshrc or .bashrc ...
+#### Notice: this export line will appare after you install mysql successfully;
+``` sh
+export mysql=
+```
+### step 4/ Link to homebrew to new `mysql`
 ```sh
 brew link --force mysql@5.7
 ```
-### 4. Start mysql with `home brew`
+### step 5/ Start mysql with `home brew`
 ```sh
 brew services start mysql@5.7
 ```
