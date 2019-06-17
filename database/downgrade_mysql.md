@@ -41,29 +41,29 @@ sudo -i
 ```sh
 sudo mysqld_safe --skip-grant-tables &
 ```
-### Step 3: Login to user root mysql
+#### Step 3: Login to user root mysql
 ```sh
 mysql -u root
 ```
 
-### Step 4: Change password root user:
+#### Step 4: Change password root user:
 ```sh
 use mysql;
 update user set authentication_string=password('123') where user='root';
 flush privileges;
 \q # quit mysql commandline
 ```
-### Step 5: restart mysql;
-#### Option 1(recommend)
+#### Step 5: restart mysql;
+##### Option 1(recommend)
 ```sh
 brew services stop mysql@5.7
 brew services start mysql@5.7
 ```
-#### Option 2
+##### Option 2
 ```sh
 brew services restart mysql@5.7
 ```
-### Step 6: Try to re-access mysql:
+#### Step 6: Try to re-access mysql:
 ```sh
 mysql -u root -p
 ```
