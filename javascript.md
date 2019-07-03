@@ -1,3 +1,57 @@
+## Manual mapping role
+###### updated_at: 01:31 04-07-2019
+
+```javascript
+// utils-request.js
+import StringUtils from 'lodash/string'
+
+// Mapping from the file models/user_role -> permission_level
+const namespaces = {
+  administrator: '/admin',
+  user: '/user',
+}
+
+StringUtils.templateSettings.interpolate = /{{([\s\S]+?)}}/g
+const get = (req, params = {}, namspace = '') => {
+  const reqWithParams = StringUtils.template(req)(params)
+  return `${namspace}${reqWithParams}`
+}
+
+const publicReq = (req, params = {}) => {
+  return get(req, params)
+}
+
+const privateReq = (req, params = {}) => {
+  const namspace = store.getState().reduxTokenAuth.currentUser.attributes.role.permission_level
+  const namespacePath = namespaces[namspace]
+  return get(req, params, namespacePath)
+}
+
+export const requestUtils = {
+  pub: publicReq,
+  pri: privateReq,
+  get: get
+}
+```
+### Usage
+```javascript
+import axios from 'axios';
+import { requestUtils, requests } from 'utils/request'
+
+// Somethings
+  const queryString = requestUtils.pub('/users/search');
+  const data = {username: username, password: password};
+
+  return axios.post(queryString, data).then(
+    response => {
+      console.log('Put Response ok');
+    },
+    error => {
+      console.log('response error: ', error)
+    }
+  )
+```
+
 ## i18n with pure js 
 ##### updated_at: 01:23 04-07-2019
 ```javascript
