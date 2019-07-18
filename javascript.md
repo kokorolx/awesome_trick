@@ -1,3 +1,20 @@
+## Get Deep Value object:
+### (javascript)
+```js 
+let deep_value = (o, p) => p.split('.').reduce((a, v) => a[v] || [], o);
+```
+```js
+ob = {'a':1, 'b': {'c': 2}}
+deep_value(ob, "b.c") // 2
+deep_value(ob, "b.d") // []
+
+```
+### (coffee script)
+```coffee
+object.key1?.key2?.key3
+```
+
+
 ## Manual mapping role
 ###### updated_at: 01:31 04-07-2019
 
