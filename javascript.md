@@ -1,4 +1,5 @@
 ## Get Deep Value object:
+###### updated_at: 12:15 18-07-2019 GTM+7
 ### (javascript)
 ```js 
 let deep_value = (o, p) => p.split('.').reduce((a, v) => a[v] || [], o);
@@ -16,7 +17,7 @@ object.key1?.key2?.key3
 
 
 ## Manual mapping role
-###### updated_at: 01:31 04-07-2019
+###### updated_at: 01:31 04-07-2019 GTM+7
 
 ```javascript
 // utils-request.js
@@ -70,7 +71,7 @@ import { requestUtils, requests } from 'utils/request'
 ```
 
 ## i18n with pure js 
-##### updated_at: 01:23 04-07-2019
+##### updated_at: 01:23 04-07-2019 GTM+7
 ```javascript
 // i18n-utils.js
 const getLocale = (obj, field, lang='en') => {
