@@ -3,6 +3,7 @@ Util when working, some trick and more :)
 
 ### Ruby
 1. Remove all key which value is blank? [squeeze_hash.rb](https://github.com/kokorolx/awesome_trick/blob/master/ruby/squeeze_hash.rb)
+2. Get record of two tables, order by updated_at [order_by_updated_at_two_tables.md](d14e1ef)
 
 ### ShellScript
 1. Auto move mouse and click for unix system [auto_switch_application.sh](https://github.com/kokorolx/awesome_trick/blob/master/auto_switch_application.sh)
@@ -32,4 +33,4 @@ Util when working, some trick and more :)
 
 ## Fork or self lib
 1. Convert kansuji [Code](https://github.com/kokorolx/kansuji) -- [Demo](https://kansuji.herokuapp.com/to_kansujis)
-2. react-native-form-validator [react-native-form-validator](https://github.com/kokorolx/react-native-form-validator) 
+2. react-native-form-validator [react-native-form-validator](https://github.com/kokorolx/react-native-form-validator)
