@@ -4,6 +4,8 @@ Util when working, some trick and more :)
 ### Ruby
 1. Remove all key which value is blank? [squeeze_hash.rb](https://github.com/kokorolx/awesome_trick/blob/master/ruby/squeeze_hash.rb)
 2. Get record of two tables, order by updated_at [order_by_updated_at_two_tables.md](d14e1ef)
+3. Get next/prev record when using UUID as primary key in Postgresql [get next/prev record using UUID](ruby/get_next_prev_record.md)
+4. Check job is running or scheduling in sidekiq [check_job_sidekiq](ruby/check_job_sidekiq.md)
 
 ### ShellScript
 1. Auto move mouse and click for unix system [auto_switch_application.sh](https://github.com/kokorolx/awesome_trick/blob/master/auto_switch_application.sh)
@@ -17,7 +19,7 @@ Util when working, some trick and more :)
 ### Database
 1. PostgreSQL not running on Mac [2335c6](https://github.com/kokorolx/awesome_trick/commit/2335c60a67e9782a45ccd61cafcd8776c6b81da0)
 2. Downgrade mysql from 8.0 to 5.7 MACOS-mojave [edab683](https://github.com/kokorolx/awesome_trick/blob/master/database/downgrade_mysql.md)
-
+3. Get the count of two table fields in a single MySQL query? [6ba4c987](database/get_count_n_field_in_single_sql.md)
 ### Git
 1. Find branch name by git-what-branch [f6a1423](https://github.com/kokorolx/awesome_trick/blob/master/git/finding_branch.md)
 
