@@ -36,3 +36,8 @@ Util when working, some trick and more :)
 ## Fork or self lib
 1. Convert kansuji [Code](https://github.com/kokorolx/kansuji) -- [Demo](https://kansuji.herokuapp.com/to_kansujis)
 2. react-native-form-validator [react-native-form-validator](https://github.com/kokorolx/react-native-form-validator)
+
+## Some interview test:
+### Year: 2019
+1. Write simple app with full test and scaleable (Simple app with test and scaleable) [https://github.com/kokorolx/pv_logivan_nov_2019#pv_logivan_nov_2019]
+2. Override validate of Rails (pv_override_defined_validate)[https://github.com/kokorolx/pv_override_defined_validate#requirements]
