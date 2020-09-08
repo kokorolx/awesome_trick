@@ -9,7 +9,7 @@ Util when working, some trick and more :)
 
 ### ShellScript
 1. Auto move mouse and click for unix system [auto_switch_application.sh](https://github.com/kokorolx/awesome_trick/blob/master/auto_switch_application.sh)
-
+2. Kill process using port .. [kill_process.md](https://github.com/kokorolx/awesome_trick/blob/edccacb787ce8a9f709a08a7d54d1e6903b7171e/shellscript/kill_process_with_port.md)
 ### Javascript
 1. Get diff array [#get-diff-array](https://github.com/kokorolx/awesome_trick/blob/master/javascript.md#get-diff-array)
 2. Get deep value: [#get-deep-value-object](https://github.com/kokorolx/awesome_trick/blob/master/javascript.md#get-deep-value-object)
