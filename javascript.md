@@ -110,3 +110,24 @@ a1 = [1,2,3]
 a2 = [2,3,4]
 difference(a1, a2) // [1]
 ```
+
+## Check localStorage is working
+```js
+  try{
+    if ('localStorage' in window && window.localStorage !== null) {
+      localStorage.setItem('testLocalStorage', 'testLocalStorage');
+      if (localStorage.getItem('testLocalStorage') !== 'testLocalStorage') {
+          localStorage.removeItem('testLocalStorage');
+          //for private browsing, error is thrown before even getting here
+          alert('can read CANNOT write'); 
+      }else{
+          localStorage.removeItem('testLocalStorage');
+          alert('can use localStorage ');
+      }
+    }else{
+      alert('CANNOT use localStorage ');
+    }
+  }catch(ex){
+    alert('CANNOT use localStorage  reliably');
+  }
+```
