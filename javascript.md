@@ -131,3 +131,10 @@ difference(a1, a2) // [1]
     alert('CANNOT use localStorage  reliably');
   }
 ```
+
+## Remove undefined value in Object
+
+```js
+let a = {a: 1, b: 2, c: undefined}
+JSON.parse(JSON.stringify(a))
+```
