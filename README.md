@@ -39,5 +39,7 @@ Util when working, some trick and more :)
 
 ## Some interview test:
 ### Year: 2019
-1. Write simple app with full test and scaleable (Simple app with test and scaleable) [https://github.com/kokorolx/pv_logivan_nov_2019#pv_logivan_nov_2019]
-2. Override validate of Rails (pv_override_defined_validate)[https://github.com/kokorolx/pv_override_defined_validate#requirements]
+1. Write simple app with full test and scaleable [repo](https://github.com/kokorolx/pv_logivan_nov_2019#pv_logivan_nov_2019)
+2. Override validate of Rails [repo](https://github.com/kokorolx/pv_override_defined_validate#requirements)
+3. Simple bank transaction website [repp](https://github.com/kokorolx/pv_simple_transaction_bank_aug_2020)
+
