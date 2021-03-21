@@ -22,6 +22,7 @@ Util when working, some trick and more :)
 3. Get the count of two table fields in a single MySQL query? [6ba4c987](database/get_count_n_field_in_single_sql.md)
 ### Git
 1. Find branch name by git-what-branch [f6a1423](https://github.com/kokorolx/awesome_trick/blob/master/git/finding_branch.md)
+2. Change author name/email when wrong [be401e0](https://github.com/kokorolx/awesome_trick/blob/master/git/change_author_name.md)
 
 ### Android
 1. MACOSX - Fix Internet connection in Android Emulator [c673db](https://github.com/kokorolx/awesome_trick/blob/master/android.md#fix-internet-connection-in-android-emulator)
