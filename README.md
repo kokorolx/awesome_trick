@@ -15,6 +15,7 @@ Util when working, some trick and more :)
 2. Get deep value: [#get-deep-value-object](https://github.com/kokorolx/awesome_trick/blob/master/javascript.md#get-deep-value-object)
 3. Manual mapping user role [#manual-mapping-role](https://github.com/kokorolx/awesome_trick/blob/master/javascript.md#manual-mapping-role)
 4. i18n with pure js [#i18n-with-pure-js](https://github.com/kokorolx/awesome_trick/blob/master/javascript.md#i18n-with-pure-js)
+5. lambda-catch-forwared-mailgun [#lambda-catch-forwared-mailgun](https://github.com/kokorolx/lambda-catch-forwared-mailgun)
 
 ### Database
 1. PostgreSQL not running on Mac [2335c6](https://github.com/kokorolx/awesome_trick/commit/2335c60a67e9782a45ccd61cafcd8776c6b81da0)
