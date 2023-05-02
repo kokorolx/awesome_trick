@@ -41,7 +41,14 @@ Util when working, some trick and more :)
 
 ## Some interview test:
 ### Year: 2019
-1. Write simple app with full test and scaleable [repo](https://github.com/kokorolx/pv_logivan_nov_2019#pv_logivan_nov_2019)
-2. Override validate of Rails [repo](https://github.com/kokorolx/pv_override_defined_validate#requirements)
-3. Simple bank transaction website [repp](https://github.com/kokorolx/pv_simple_transaction_bank_aug_2020)
+1. ✅ Write simple app with full test and scaleable [repo](https://github.com/kokorolx/itv-simple_ruby_with_rspec)
+2. 🫥 Override validate of Rails [repo](https://github.com/kokorolx/itv_override_defined_validate)
 
+### Year: 2020
+1. ✅ 💰forward.VN - Simple bank transaction website [repp](https://github.com/kokorolx/itv_simple_transaction_bank_aug_2020)
+
+### Year 2022
+1. ✅ Major element by JS [repo](https://github.com/kokorolx/itv-major-element)
+
+### Year 2023
+1. ✅[Simple Jackpot by NuxtJS and NestJS](https://github.com/kokorolx/itv-jackpot-paby)
