@@ -39,7 +39,7 @@ Util when working, some trick and more :)
 1. Convert kansuji [Code](https://github.com/kokorolx/kansuji) -- [Demo](https://kansuji.herokuapp.com/to_kansujis)
 2. react-native-form-validator [react-native-form-validator](https://github.com/kokorolx/react-native-form-validator)
 
-## Some interview test:
+## Some interview tests:
 ### Year: 2019
 1. ✅ Write simple app with full test and scaleable [repo](https://github.com/kokorolx/itv-simple_ruby_with_rspec)
 2. 🫥 Override validate of Rails [repo](https://github.com/kokorolx/itv_override_defined_validate)
