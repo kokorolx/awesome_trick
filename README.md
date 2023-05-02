@@ -47,6 +47,9 @@ Util when working, some trick and more :)
 ### Year: 2020
 1. ✅ 💰forward.VN - Simple bank transaction website [repp](https://github.com/kokorolx/itv_simple_transaction_bank_aug_2020)
 
+### Year: 2021
+1. ❌ Simple timesheet management [private-notion](https://www.notion.so/hoangtamle/Weploy-06072021-67b32d8470d04aa49129ae29267c03c5?pvs=4)
+
 ### Year 2022
 1. ✅ Major element by JS [repo](https://github.com/kokorolx/itv-major-element)
 
