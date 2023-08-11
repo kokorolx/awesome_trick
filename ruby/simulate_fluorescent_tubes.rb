@@ -1,3 +1,5 @@
+require 'matrix'
+
 # In a University, there is a classroom, in that classroom, there are 4 fluorescent tube units, each
 # unit contains 4 fluorescent tubes.
 # The classroom is used 15 hours a day, 5 times a week, 9 months a year.
@@ -11,8 +13,6 @@
 # 1. How many fluorescent tubes were broken in 1 year in that classroom?
 # 2. How much money do fluorescent tubes cost the University per year per classroom?
 
-
-# Define a function to generate a random lifetime between 100 and 200 hours
 def random_lifetime
   rand(100..200)
 end
@@ -23,7 +23,7 @@ def replace_unit_tubes(unit)
 end
 
 # Define a function to simulate the cost of replacing fluorescent tubes in a classroom for a year
-def simulate_cost_and_broken_tubes
+def simulate_cost_and_broken_tubes_each
   units = 4
   tubes_per_unit = 4
   hours_per_day = 15
@@ -33,9 +33,9 @@ def simulate_cost_and_broken_tubes
 
   total_cost = 0
   total_broken = 0
+  change_all = 0
 
   lifetimes = Array.new(units) { Array.new(tubes_per_unit) { random_lifetime } }
-
   weeks_per_year.times do
     days_per_week.times do
       hours_per_day.times do
@@ -43,16 +43,13 @@ def simulate_cost_and_broken_tubes
           tubes_per_unit.times do |j|
             lifetimes[i][j] -= 1
 
-            if lifetimes[i][j] <= 0
+            if lifetimes[i][j] == 0
               total_broken += 1
-
-              if lifetimes[i].count { |lt| lt <= 0 } >= 2
-                total_cost += cost_per_tube * tubes_per_unit
-                lifetimes[i] = replace_unit_tubes(lifetimes[i])
-              else
-                total_cost += cost_per_tube
-                lifetimes[i][j] = random_lifetime
-              end
+            end
+            if lifetimes[i].count { |lt| lt <= 0 } >= 2
+              change_all += 1
+              total_cost += cost_per_tube * tubes_per_unit
+              lifetimes[i] = replace_unit_tubes(lifetimes[i])
             end
           end
         end
@@ -60,16 +57,50 @@ def simulate_cost_and_broken_tubes
     end
   end
 
+  p "We only replace #{change_all} x 4 tube x 7$"
+  [total_cost, total_broken]
+end
+
+
+def simulate_cost_and_broken_tubes_matrix
+  matrix = Matrix.build(4,4) { |row, col| rand(100..200) }
+  sub_matrix = Matrix.build(4,4) { |row, col| 1 }
+  total_run_time = 15 * 5 * 4 * 9
+  total_cost = 0
+  total_broken = 0
+  change_all = 0
+
+  total_run_time.times.each do |t|
+    matrix = matrix - sub_matrix
+
+    new_matrix = matrix.row_vectors.map do |row, index|
+      if row.count(0) == 1
+        total_broken += 1
+      end
+
+      if row.count{ |n| n <= 0 } >= 2
+        change_all += 1
+        row = Vector.elements(Array.new(4) { rand(100..200) })
+        total_cost += 4 * 7
+      end
+
+      row
+    end
+
+    matrix = Matrix.rows(new_matrix)
+  end
+
+  p "We only replace #{change_all} x 4 tube x 7$"
   [total_cost, total_broken]
 end
 
 p "10 times runs, starting ..... "
-
 10.times do |i|
   puts "\n # #{i}"
-  total_cost, total_broken = simulate_cost_and_broken_tubes()
+  total_cost_matrix, total_broken_matrix = simulate_cost_and_broken_tubes_matrix
+  total_cost_each, total_broken_each = simulate_cost_and_broken_tubes_each
 
-  puts "The number of fluorescent tubes that were broken in one year in that classroom is #{total_broken}."
-  puts "The cost of fluorescent tubes for the University per year per classroom is $#{total_cost}."
+  puts "\nmatrix:  broken: #{total_broken_matrix} | cost: #{total_cost_matrix} USD"
+  puts "each  :  broken: #{total_broken_each} | cost: #{total_cost_each} USD"
 end
 
