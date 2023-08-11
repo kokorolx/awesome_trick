@@ -6,6 +6,7 @@ Util when working, some trick and more :)
 2. Get record of two tables, order by updated_at [order_by_updated_at_two_tables.md](d14e1ef)
 3. Get next/prev record when using UUID as primary key in Postgresql [get next/prev record using UUID](ruby/get_next_prev_record.md)
 4. Check job is running or scheduling in sidekiq [check_job_sidekiq](ruby/check_job_sidekiq.md)
+5. Simulate cost and broken tubes
 
 ### ShellScript
 1. Auto move mouse and click for unix system [auto_switch_application.sh](https://github.com/kokorolx/awesome_trick/blob/master/auto_switch_application.sh)
